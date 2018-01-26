@@ -345,8 +345,8 @@
 	            </span>
 		          </a>
 		          <ul class="treeview-menu">
-		            <li class="active"><a href="application/data.html"><i class="fa fa-circle-o"></i> Data </a></li>
-		            <li><a href="application/tambah.html"><i class="fa fa-circle-o"></i> Tambah </a></li>
+		            <li class="active"><a href="#"><i class="fa fa-circle-o"></i> Data </a></li>
+		            <li><a href="#"><i class="fa fa-circle-o"></i> Tambah </a></li>
 		          </ul>
 		        </li>
     	    
