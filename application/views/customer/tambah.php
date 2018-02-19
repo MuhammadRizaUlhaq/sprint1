@@ -1,6 +1,6 @@
 <?php $this->load->view('template/header'); ?>
 <?php $this->load->view('template/sidebar'); ?>
-
+ 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -14,47 +14,56 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <?php foreach($user as $u){ ?> 
-            <form class="form-horizontal" action="<?php echo base_url(). 'user/update'; ?>" method="post">
+            <form class="form-horizontal"method="post">
               <div class="box-body">
                 <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                  <label for="inputEmail3" class="col-sm-2 control-label">Nama</label>
+
                   <div class="col-sm-10">
-                    <input type="hidden" name="id" value="<?php echo $u->userid ?>">
-                    <input type="text" class="form-control" id="username" name="username" value="<?php echo $u->username ?>">
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                  <label for="inputPassword3" class="col-sm-2 control-label">Alamat</label>
+
                   <div class="col-sm-10">
-                    <input type="password" class="form-control" id="password" name="password" value="<?php echo $u->password ?>">
+                    <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Full Name</label>
+                  <label for="inputPassword3" class="col-sm-2 control-label">Telepon</label>
+
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="fullname" name="fullname" value="<?php echo $u->fullname ?>">
+                    <input type="text" class="form-control" id="telepon" name="telepon" placeholder="Masukkan No Telepon">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Level</label>
+                  <label for="inputPassword3" class="col-sm-2 control-label">Jenis Kelamin</label>
+
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="level" name="level" value="<?php echo $u->level ?>">
+                    <input type="text" class="form-control" id="gender" name="gender" placeholder="Jenis Kelamin">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan Email">
                   </div>
                 </div>
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
+                <button type="delete" class="btn btn-default">Hapuss</button>
                 <button type="submit" class="btn btn-info pull-right">Submit</button>
               </div>
               <!-- /.box-footer -->
             </form>
-            <?php } ?>
           </div>
      
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
 <?php $this->load->view('template/footer'); ?>
+
