@@ -20,7 +20,8 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="bos-title"><?php echo anchor('customer/tambah', '<i class="glyphicon glyphicon-plus"></i>Tambah Data', array('class' => 'btn btn-primary btn-sm')); ?></h3>
+              <h3 class="box-title"><?php echo anchor('customer/tambah', '<i class="glyphicon glyphicon-plus"></i>Tambah Data', array('class' => 'btn btn-primary btn-sm')); ?>
+              </h3>
             </div>
             <div class="box-body">
               <div class="table-responsive">
@@ -32,7 +33,6 @@
                       <th>Alamat</th>
                       <th>Telepon</th>
                       <th>Jenis Kelamin</th>
-                      <th>Email</th>
                       <th>Action</th>
                     </tr>
                   </thead>

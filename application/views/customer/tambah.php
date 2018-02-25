@@ -44,17 +44,10 @@
                     <input type="text" class="form-control" id="gender" name="gender" placeholder="Jenis Kelamin">
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
-
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan Email">
-                  </div>
-                </div>
               </div>
               <!-- /.box-body -->
               <div class="box-footer">
-                <button type="delete" class="btn btn-default">Hapuss</button>
+                <button type="reset" class="btn btn-default">Hapus</button>
                 <button type="submit" class="btn btn-info pull-right">Submit</button>
               </div>
               <!-- /.box-footer -->

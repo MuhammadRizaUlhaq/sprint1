@@ -30,18 +30,18 @@
       $customer = 'localhost:801/public_html/customer';
       $rute = 'localhost:801/public_html/rute';
       $transportation = 'localhost:801/public_html/transportation'; 
-      $transport_type = 'localhost:801/public_html/transport_type';
+      $transportation_type = 'localhost:801/public_html/transportation_type';
       $reservation = 'localhost:801/public_html/reservation';
       ?>
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li <?php if ($halaman==$admin) {echo "class='active'"; } ?> ><a href=<?php echo base_url("admin"); ?>><i class=" fa fa-dashboard"></i> Dashboard</a></li>
-        <li <?php if ($halaman==$customer) {echo "class='active'"; } ?> ><a href=<?php echo base_url("customer"); ?>><i class="fa fa-user"></i> Data customers</a></li>
-        <li <?php if ($halaman==$reservation) {echo "class='active'"; } ?> ><a href=<?php echo base_url("reservation"); ?>><i class="fa fa-sticky-note"></i> Data reservation</a></li>
-        <li <?php if ($halaman==$rute) {echo "class='active'"; } ?> ><a href=<?php echo base_url("rute"); ?>><i class="fa fa-road"></i> Data rute</a></li>
-        <li <?php if ($halaman==$transportation) {echo "class='active'"; } ?> ><a href=<?php echo base_url("transportation"); ?>><i class="fa fa-plane"></i> Data transportation</a></li>
-        <li <?php if ($halaman==$transport_type) {echo "class='active'"; } ?> ><a href=<?php echo base_url("transport_type"); ?>><i class="fa fa-plane"></i> Data transport type</a></li>
-        <li <?php if ($halaman==$user) {echo "class='active'"; } ?> ><a href=<?php echo base_url("user"); ?>><i class="fa fa-users"></i> Data user</a></li>   
+        <li <?php if ($halaman==$customer) {echo "class='active'"; } ?> ><a href=<?php echo base_url("customer"); ?>><i class="fa fa-user"></i> Data Customers</a></li>
+        <li <?php if ($halaman==$reservation) {echo "class='active'"; } ?> ><a href=<?php echo base_url("reservation"); ?>><i class="fa fa-sticky-note"></i> Data Reservation</a></li>
+        <li <?php if ($halaman==$rute) {echo "class='active'"; } ?> ><a href=<?php echo base_url("rute"); ?>><i class="fa fa-road"></i> Data Rute</a></li>
+        <li <?php if ($halaman==$transportation) {echo "class='active'"; } ?> ><a href=<?php echo base_url("transportation"); ?>><i class="fa fa-plane"></i> Data Transportation</a></li>
+        <li <?php if ($halaman==$transportation_type) {echo "class='active'"; } ?> ><a href=<?php echo base_url("transportation_type"); ?>><i class="fa fa-plane"></i> Data Transportation Type</a></li>
+        <li <?php if ($halaman==$user) {echo "class='active'"; } ?> ><a href=<?php echo base_url("user"); ?>><i class="fa fa-users"></i> Data User</a></li>   
       </ul> 
    
     </section>

@@ -40,13 +40,13 @@ class User extends CI_Controller {
 	}
 
 	function edit($id){
-		$where = array('userid' => $id);
+		$where = array('id' => $id);
 		$data['user'] = $this->m_user->edit_user($where,'user')->result();
 		$this->load->view('user/edit',$data);
 	}
 
 	function update(){
-		$userid = $this->input->post('userid');
+		$id = $this->input->post('id');
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$fullname = $this->input->post('fullname');
@@ -60,7 +60,7 @@ class User extends CI_Controller {
 			);
 
 		$where = array(
-			'userid' => $userid
+			'id' => $id
 		);
 
 		$this->m_user->update_user($where,$data,'user');

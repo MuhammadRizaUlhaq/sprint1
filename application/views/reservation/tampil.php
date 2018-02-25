@@ -6,12 +6,12 @@
     <!-- Content Header (Page header) -->
     <section class='content-header'>
       <h1>
-        User
-        <small>Daftar Semua User</small>
+        Reservation
+        <small>Daftar Semua Reservation</small>
       </h1>
       <ol class='breadcrumb'>
-        <li><a href='#'><i class='fa fa-users'></i>User</a></li>
-        <li class='active'>Daftar Semua User</li>
+        <li><a href='#'><i class='fa fa-sticky-note'></i>Reservation</a></li>
+        <li class='active'>Daftar Semua Reservation</li>
       </ol>
     </section>  
     <!-- Main content -->
@@ -20,7 +20,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class='box-title'><?php echo anchor('user/tambah', '<i class="glyphicon glyphicon-plus"></i> Tambah Data', array('class' => 'btn btn-primary btn-sm')); ?>
+              <h3 class='box-title'><?php echo anchor('reservation/tambah', '<i class="glyphicon glyphicon-plus"></i> Tambah Data', array('class' => 'btn btn-primary btn-sm')); ?>
               </h3>
             </div>
             <div class="box-body">
@@ -29,31 +29,36 @@
                   <thead>
                     <tr>
                       <th>No</th>
-                      <th>Username</th>
-                      <th>Password</th>
-                      <th>Fullname</th>
-                      <th>Level</th>
+                      <th>Code</th>
+                      <th>Reservation At</th>
+                      <th>Date</th>
+                      <th>Customer Id</th>
+                      <th>Seat Code</th>
+                      <th>Rute Id</th>
+                      <th>Depart At</th>
+                      <th>User Id</th>
                       <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
-                   <?php 
-                   $no = 1;
-                   foreach ($user as $u) {
-                   ?>
+                
                     <tr>
-                      <td><?php echo $no++ ?></td>
-                      <td><?php echo $u->username ?></td>
-                      <td><?php echo $u->password ?></td>
-                      <td><?php echo $u->fullname ?></td>
-                      <td><?php echo $u->level ?></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                       <td>
-                        <?php 
+                       <!-- <?php 
                         echo anchor('user/edit/'.$u->id, '<i class="btn btn-primary glyphicon glyphicon-edit" title="Edit"></i>'); 
-                        echo anchor('user/hapus/'.$u->id, '<i class="btn btn-primary glyphicon glyphicon-trash" title="Delete"></i>'); ?>
+                        echo anchor('user/hapus/'.$u->id, '<i class="btn btn-primary glyphicon glyphicon-trash" title="Delete"></i>'); ?>-->
                       </td>
                     </tr>
-                  <?php } ?>
+               
                   </tbody>
                 </table>
               </div>
